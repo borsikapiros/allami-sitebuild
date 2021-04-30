@@ -1,5 +1,6 @@
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -7,7 +8,7 @@
 }
 
 body {
-  background-color: #eba91b;
+  background-color: #f5b630;
   color: #217056;
   text-align: center;
 }
@@ -25,12 +26,42 @@ body {
   color: #217056;
 }
 
+a {
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+  color: #3da783;
+}
+
+:-ms-input-placeholder {
+  color: #3da783;
+}
+
+::-ms-input-placeholder {
+  color: #3da783;
+}
+
+::placeholder {
+  color: #3da783;
+}
+
+button {
+  color: white;
+  background-color: #3da783;
+  border: 1px solid white;
+  width: 30vw;
+  height: 90px;
+  margin-top: 10px;
+  letter-spacing: 4px;
+}
+
 .hamburger {
   width: 150px;
   height: 150px;
   position: absolute;
   margin-left: 65vw;
-  margin-top: 50px;
+  margin-top: -50px;
   background-color: #217056;
 }
 
@@ -48,17 +79,23 @@ body {
 
 @media (max-width: 1000px) {
   .hamburger {
-    width: 90px;
-    height: 90px;
-    margin-left: 80vw;
+    width: 120px;
+    height: 120px;
+    margin-left: 70vw;
   }
   .hamb-line {
-    width: 45px;
-    height: 6px;
-    margin-bottom: 8px;
+    width: 65px;
+    height: 10px;
+    margin-bottom: 12px;
     margin-left: 10px;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
+  }
+  .field {
+    width: 60vw;
+  }
+  button {
+    width: 50vw;
   }
 }
 
@@ -67,7 +104,7 @@ body {
     width: 80px;
     height: 80px;
     margin-left: 70vw;
-    margin-top: -15px;
+    margin-top: -50px;
   }
   .hamb-line {
     width: 40px;
@@ -76,6 +113,12 @@ body {
     margin-left: 3px;
     -webkit-transform: translateY(25px);
             transform: translateY(25px);
+  }
+  .field {
+    width: 80vw;
+  }
+  button {
+    width: 70vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
